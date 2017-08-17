@@ -1,0 +1,333 @@
+/*
+Project Name: Final Project
+Author: Fernanda Shin
+Developer @GA in LA
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+* {
+
+  box-sizing: border-box; 
+}
+body{
+	width: 100%;
+
+}
+
+#header_container {
+	height: 100px;
+	background-color: blue;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0px;
+	
+
+}
+.hamburger{
+  padding: 20px;
+  display: none;
+}
+
+#logo {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	font-size: 24px;
+	margin-left: 20px;
+}
+nav {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+ul {
+	display:flex;
+	justify-content:space-around;
+	width: 500px;
+	list-style-type: none;
+
+}
+#blockquote {
+	height: 200px;
+	background-color: yellow;
+	display: flex;
+	align-items: center;
+	margin-top:100px;
+	text-align: center;
+	justify-content: center;
+
+}
+blockquote {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	font-size: 20px;
+
+}
+
+#aboutme {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+}
+#mydescription {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+#myimage {
+	width: 25%;
+}
+
+#selected_work {
+	height: 200px;
+	background-color: pink;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+
+}
+#mainsection_home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+}
+#confetti_content {
+	width: 800px;
+	height: 500px;
+	background-color: gray;
+	margin-bottom: 50px
+}
+#confetti_content2 {
+	width: 800px;
+	height: 500px;
+	background-color: gray;
+	margin-bottom: 50px
+}
+
+h2 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: black;
+}
+
+h3 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	margin-bottom: -20px;
+	padding-top: 20px;
+}
+h5 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+}
+
+
+#homefooter {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 200px;
+	background-color: green;
+}
+
+#contact {
+	width: 200px;
+    border: none;
+    background-color:pink;
+    padding: 20px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	font-color: white;
+}
+
+#top {
+	margin-top: 30px;
+	border-radius: 100%;
+	padding: 20px;
+	border: none;
+	background-color: purple;
+
+
+
+}
+a {
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+
+/*WORK PAGE CSS*/
+section h4 {
+	margin-top: 150px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: black;
+	margin-top: 200px;
+	margin-left: 60px;
+}
+
+.grid_container {
+	display: grid;
+  	grid-template-columns: 30% 30% 30%;
+  	min-height: 10vh;
+  	grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(75px, auto);
+  	grid-template-areas:"a b c"
+                       	"d e f"
+                      	"g h i";
+
+}
+
+.squares {
+	height: 200px;
+	width: 300px;
+	background-color: pink;
+	margin-top:30px;
+	margin-left: 60px;
+	margin-bottom: 20px;
+
+}
+/*RESUME PAGE CSS*/
+
+hr {
+	border-color: gray;
+	border-width: 1px;
+	width: 90%;
+}
+section h5 {
+	text-align: center;
+}
+section a {
+	color: blue;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: none;
+	margin-bottom: 60px;
+}
+#resumeimg {
+	width: 800px;
+	height: 800px;
+	background-color: pink;
+	margin: auto;
+	margin-bottom: 50px;
+	margin-top: 30px;
+}
+#companiesimage {
+	margin: auto;
+	width: 600px;
+	height: 100px;
+	background-color: pink;
+	margin-bottom: 50px;
+
+}
+/*CONTACT PAGE CSS*/
+
+#contact-container {
+	margin-top: 200px;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#submit {
+	width: 200px;
+    border: none;
+    background-color:pink;
+    padding: 20px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	font-color: white;
+	margin-top: 30px;
+}
+#email {
+	width: 500px;
+	height: 50px;
+
+
+}
+#message {
+	width: 500px;
+	height: 150px;
+}
+.block label { 
+	display: block;
+	text-align: left;
+	margin-top: 30px;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+
+/*Questions for Barry: Work Page: when reducing size of browser, why are the squares in the grid combinining?
+/**/
+
+
+@media screen and (max-width: 780px){
+
+/*MOBILE VERSION*/
+
+.grid_container {
+	display:flex;
+	flex-direction: column;
+}
+
+header, ul {
+	flex-direction: column;
+}
+
+.hamburger {
+    display: block;
+    color: white;
+  }
+
+  header ul li {
+    width: 100%;
+    padding: 5px;
+    margin: 0;
+  }
+  nav {
+    /*start with nav closed*/
+    max-height: 0;
+    /*ensures the menu is not visible from the start*/
+    overflow: hidden;
+  }
+  nav.open{
+    max-height: 200px;
+  }
+  section div input {
+  	max-width: 300px;
+  }
+}
+
