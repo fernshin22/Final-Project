@@ -18,8 +18,8 @@ body{
 }
 
 #header_container {
+	background-color:white;
 	height: 100px;
-	background-color: blue;
 	position: fixed;
 	width: 100%;
 	display: flex;
@@ -27,9 +27,9 @@ body{
 	align-items: center;
 	top: 0px;
 	
-
 }
-.hamburger{
+
+.hamburger {
   padding: 20px;
   display: none;
 }
@@ -44,6 +44,7 @@ nav {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
+
 }
 ul {
 	display:flex;
@@ -52,20 +53,41 @@ ul {
 	list-style-type: none;
 
 }
+#paralaxbox1 {
+	overflow: scroll;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	position: relative;
+	width: 100%;
+
+}
+#paralaxbox2 {
+	overflow: scroll;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	position: relative;
+	width: 100%;
+
+}
+
+
 #blockquote {
-	height: 200px;
-	background-color: yellow;
+	height: 400px;
+	margin-top: 100px;
+	background-color: #e33185;
 	display: flex;
 	align-items: center;
-	margin-top:100px;
 	text-align: center;
 	justify-content: center;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	position: absolute;
+	width: 100%;
+
 
 }
 blockquote {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
 	font-size: 20px;
+	color: white;
 
 }
 
@@ -73,7 +95,11 @@ blockquote {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 30px;
+	margin-top:500px;
+	height: 600px;
+	position: relative;
+	background: white;
+	width: 100%;
 }
 #mydescription {
 	font-family: 'Nunito', sans-serif;
@@ -82,20 +108,25 @@ blockquote {
 	padding-left: 100px;
 	padding-right: 100px;
 	text-align: center;
-	margin-bottom: 50px;
 
 }
 #myimage {
+	margin-top: 80px;
 	width: 25%;
 }
 
-#selected_work {
-	height: 200px;
-	background-color: pink;
+#selected-work {
+	height: 400px;
+	background-color: #5bcfda;
 	display: flex;
 	align-items: center;
 	text-align: center;
 	justify-content: center;
+	box-shadow: 0 2px 6px rgba(0,0,0,.2);
+	position: absolute;
+	width: 100%;
+
+
 
 }
 #mainsection_home {
@@ -104,6 +135,11 @@ blockquote {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	position: relative;
+	background: white;
+	width: 100%;
+	margin-top: 400px;
+
 
 }
 #confetti_content {
@@ -125,6 +161,12 @@ h2 {
 	font-size: 20px;
 	color: black;
 }
+#selected-work-text {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	color: white;
+}
 
 h3 {
 	font-family: 'Nunito', sans-serif;
@@ -132,6 +174,9 @@ h3 {
 	font-size: 18px;
 	margin-bottom: -20px;
 	padding-top: 20px;
+}
+#work-content-here {
+	margin-top: 60px;
 }
 h5 {
 	font-family: 'Nunito', sans-serif;
@@ -174,10 +219,10 @@ h5 {
 
 }
 a {
-	color: white;
+	color: grey;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
-	font-size: 16px;
+	font-size: 14px;
 	text-decoration: none;
 }
 
@@ -206,7 +251,6 @@ section h4 {
 
 .squares {
 	height: 200px;
-	width: 300px;
 	background-color: pink;
 	margin-top:30px;
 	margin-left: 60px;
@@ -224,7 +268,7 @@ section h5 {
 	text-align: center;
 }
 section a {
-	color: blue;
+	color: #6598b8;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
@@ -255,43 +299,54 @@ section a {
 	flex-direction: column;
 	align-items: center;
 }
-
-#submit {
-	width: 200px;
-    border: none;
-    background-color:pink;
-    padding: 20px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-family: 'Nunito', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
-	font-color: white;
-	margin-top: 30px;
+form {
+	display:flex;
+	flex-direction: column;
 }
-#email {
-	width: 500px;
-	height: 50px;
-
-
+.row {
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	margin-bottom: 30px;
 }
-#message {
-	width: 500px;
-	height: 150px;
-}
-.block label { 
-	display: block;
-	text-align: left;
-	margin-top: 30px;
+label {
 	font-family: 'Nunito', sans-serif;
-	font-weight: 300;
-	font-size: 16px;
+	font-weight: 400;
+	font-size: 12px;
+}
+#email, #emailmessage {
+	width: 500px;
+}
+#emailmessage {
+	height: 5em;
+}
+
+.radios {
+	align-self: center;
+}
+#submit {
+	align-self: center;
+}
+
+input[type=submit] {
+    padding:15px 50px; 
+    background:white; 
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+}
+
+input[type=textarea], input[type=email] {
+	background-color: #fafafa;
+	border: 1px solid #ccc;
+	padding: 13px;
+}
+input[type="radio"]{
+  margin: 0 3px 0 3px;
 }
 
 
-/*Questions for Barry: Work Page: when reducing size of browser, why are the squares in the grid combinining?
-/**/
+
 
 
 @media screen and (max-width: 780px){
@@ -303,13 +358,16 @@ section a {
 	flex-direction: column;
 }
 
-header, ul {
+header, ul, {
 	flex-direction: column;
 }
 
 .hamburger {
     display: block;
-    color: white;
+    color: gray;
+    font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
   }
 
   header ul li {
@@ -329,5 +387,21 @@ header, ul {
   section div input {
   	max-width: 300px;
   }
+.grid_container {
+	display: grid;
+  	grid-template-columns: 50% 50%;
+  	min-height: 10vh;
+  	grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(75px, auto);
+  	grid-template-areas:"a b" 
+                       	"c d" 
+                      	"e f"
+                      	"g h"
+                      	"i j"
+                      	;
+
+}
+
+#myimage {
+	width:40%;
 }
 

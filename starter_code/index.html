@@ -10,9 +10,9 @@
 		<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-		<meta name=“viewport” content=“width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-		<script src='http://code.jquery.com/jquery-latest.min.js'></script>
+		<script src="js/jquery.js"></script>
 		<script src="js/index.js"></script>
 	</head>
 
@@ -23,32 +23,36 @@
 
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="work.html">Work</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="work.html">WORK</a></li>
+					<li><a href="resume.html">RESUME</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
-		<aside id="blockquote">
-			<blockquote>"Intuitive design is how we give the user new superpowers." - Jared Spool</blockquote>
-		</aside>
-		<aside id="aboutme">
-			<img id="myimage" src="images/mypicture.jpg">
-			<h2>Hello there!</h2>
-			<p id="mydescription">I'm a UX/UI Designer who is passionate about building intuitive and seamless user experiences for existing and future products. My goal is to infuse design thinking that will address both customer needs and business objectives. How can I help you?</p>
-		</aside>
-		<aside id="selected_work">
-			<h2>SELECTED WORK</h2>
-		</aside>
-		<section id="mainsection_home">
-			<h3>WORK CONTENT HERE</h3>
-			<h5> UX/UI</h5>
-			<div id="confetti_content"></div>
-			<div id="confetti_content2"></div>
+		<div id="paralaxbox1">
+			<aside id="blockquote">
+				<blockquote>"Intuitive design is how we give the user new superpowers." - Jared Spool</blockquote>
+			</aside>
+			<section id="aboutme">
+				<img id="myimage" src="images/mypicture.jpg" alt="myphoto">
+				<h2>Hello there!</h2>
+				<p id="mydescription">I'm a UX/UI Designer who is passionate about building intuitive and seamless user experiences for existing and future products. My goal is to infuse design thinking that will address both customer needs and business objectives. How can I help you?</p>
+			</section>
+		</div>
+		<div id="paralaxbox2">
+			<aside id="selected-work">
+				<h2 id="selected-work-text">SELECTED WORK</h2>
+			</aside>
+			<section id="mainsection_home">
+				<h3 id="work-content-here">WORK CONTENT HERE</h3>
+				<h5> UX/UI</h5>
+				<div id="confetti_content"></div>
+				<div id="confetti_content2"></div>
 
 
-		</section>
+		    </section>
+		</div>
 		<footer id="homefooter">
 			<h3>THANK YOU!</h3>
 			<button id="contact">Contact Me</button>

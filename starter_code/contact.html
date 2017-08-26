@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,400i,600,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
 		<script src='http://code.jquery.com/jquery-latest.min.js'></script>
 		<script src="js/index.js"></script>
@@ -21,28 +22,46 @@
 
 			<nav>
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="work.html">Work</a></li>
-					<li><a href="resume.html">Resume</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="work.html">WORK</a></li>
+					<li><a href="resume.html">RESUME</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
 		</header>
 		<section id="contact-container">
 			<h5> Email me at <a id="f" href="">fernanda.shin.ux@gmail.com</a> or fill out the form below! </h5>
-			<div class="block">
-				<label>Your Email*</label>
-				<input id="email" type="text">
-			</div>
-			<div class="block">
-				<label>Message</label>
-				<input id="message" type="text">
-			</div>
-			<button id="submit">Submit</button>
+			<form action="https://formspree.io/fernanda.shin.ux@gmail.com" method="POST">
+				<div class="row">
+	    		<label for="email">Your Email *</label>
+				<input id="email" type="email" required name="email"> 
+				</div>
+				<div class="row">
+				<label for="emailmessage">Your Message</label>
+				<input id="emailmessage" type="textarea" required name="emailmessage"> 
+				</div>
+				<div class="row">
+				      <h5>How did you find me?</h5>
+				    <div class="radios">
+				      <input type="radio" id="linkedin" name="findme"> 
+				      <label for="linkedin">LinkedIn</label>
+				      <input type="radio" id="referral" name="findme">
+				      <label for="referral">Referral</label>
+				      <input type="radio" id="other" name="findme">
+				      <label for="other">Other</label>
+				    </div>
+			 	</div>
+
+			    <div id="submit">
+				<input id="submit" type="submit" value="Submit">
+				</div>
+			</form> 
 
 		</section>
 		
-		
+
 
 	</body>
 </html>
+
+<!-- Question for Barry: for the Text Area type that is Messages, why does the text start in the middle of the box? -->
