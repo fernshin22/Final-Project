@@ -43,4 +43,3 @@ $(document).ready(function(){
 //and all the content below the header are overlapping it instead of scrolling under
 //3. Back to Top button on the bottom of the page not working either
 
-
