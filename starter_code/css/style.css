@@ -14,6 +14,7 @@ Developer @GA in LA
 }
 body{
 	width: 100%;
+	background-color: white;
 
 }
 
@@ -21,12 +22,14 @@ body{
 	background-color:white;
 	height: 100px;
 	position: fixed;
+	align-items: center;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	top: 0px;
-	
+	z-index: 1;
+
+
 }
 
 .hamburger {
@@ -54,19 +57,12 @@ ul {
 
 }
 #paralaxbox1 {
-	overflow: scroll;
-	box-shadow: 0 2px 6px rgba(0,0,0,.2);
 	position: relative;
 	width: 100%;
-
-}
-#paralaxbox2 {
 	overflow: scroll;
-	box-shadow: 0 2px 6px rgba(0,0,0,.2);
-	position: relative;
-	width: 100%;
-
+	height: 1200px;
 }
+
 
 
 #blockquote {
@@ -96,7 +92,7 @@ blockquote {
 	flex-direction: column;
 	align-items: center;
 	margin-top:500px;
-	height: 600px;
+	height: 700px;
 	position: relative;
 	background: white;
 	width: 100%;
@@ -125,6 +121,7 @@ blockquote {
 	box-shadow: 0 2px 6px rgba(0,0,0,.2);
 	position: absolute;
 	width: 100%;
+	margin-top:-250px;
 
 
 
@@ -142,18 +139,13 @@ blockquote {
 
 
 }
-#confetti_content {
+.confetti_content {
 	width: 800px;
 	height: 500px;
 	background-color: gray;
 	margin-bottom: 50px
 }
-#confetti_content2 {
-	width: 800px;
-	height: 500px;
-	background-color: gray;
-	margin-bottom: 50px
-}
+
 
 h2 {
 	font-family: 'Nunito', sans-serif;
@@ -166,13 +158,14 @@ h2 {
 	font-weight: 400;
 	font-size: 30px;
 	color: white;
+	margin-top:50px;
 }
 
 h3 {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
-	margin-bottom: -20px;
+	margin-bottom: -50px;
 	padding-top: 20px;
 }
 #work-content-here {
@@ -181,7 +174,16 @@ h3 {
 h5 {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
+	font-size: 16px;
+}
+p {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
 	font-size: 14px;
+	padding-left: 120px;
+	padding-right: 120px;
+	text-align: left;
+	line-height: 2;
 }
 
 
@@ -190,40 +192,58 @@ h5 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 200px;
-	background-color: green;
+	height: 300px;
+	background-color: white;
+
+
 }
 
 #contact {
 	width: 200px;
-    border: none;
-    background-color:pink;
-    padding: 20px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+  	padding-left:50px; 
+  	padding-right: 50px;
+  	padding-top: 20px;
+  	padding-bottom: 20px;
+    background:white; 
+    border-color: gray;
+    border-width: 2px;
+    border-style: solid;
+
+   
     font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	font-size: 16px;
-	font-color: white;
+	margin-bottom: 30px;
 }
 
-#top {
-	margin-top: 30px;
-	border-radius: 100%;
-	padding: 20px;
-	border: none;
-	background-color: purple;
+
+footer #top {
+	border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	background-color: #f4f4f4;
+	color: gray;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 12px;
 
 
 
 }
+
+
 a {
 	color: grey;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	text-decoration: none;
+}
+.fontAwesome{
+    font-family: FontAwesome;
 }
 
 
@@ -259,15 +279,22 @@ section h4 {
 }
 /*RESUME PAGE CSS*/
 
+#resume-section-container {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}	
 hr {
-	border-color: gray;
+	border-color: #e8e8e8;
 	border-width: 1px;
-	width: 90%;
+	width: 95%;
 }
-section h5 {
+#resume-section-container h5 {
 	text-align: center;
+
 }
-section a {
+#resume-section-container a {
 	color: #6598b8;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 400;
@@ -276,20 +303,23 @@ section a {
 	margin-bottom: 60px;
 }
 #resumeimg {
-	width: 800px;
-	height: 800px;
-	background-color: pink;
 	margin: auto;
 	margin-bottom: 50px;
 	margin-top: 30px;
+	width: 80%;
 }
 #companiesimage {
 	margin: auto;
-	width: 600px;
-	height: 100px;
 	background-color: pink;
 	margin-bottom: 50px;
+	width: 60%;
 
+
+}
+#companies {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	font-size:13px;
 }
 /*CONTACT PAGE CSS*/
 
@@ -353,13 +383,27 @@ input[type="radio"]{
 
 /*MOBILE VERSION*/
 
+/*Home*/
+
 .grid_container {
 	display:flex;
 	flex-direction: column;
+	align-items: center;
+
+}
+#header_container {
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 0px;
+	z-index: 1;
+
+
 }
 
-header, ul, {
-	flex-direction: column;
+#paralaxbox, #homefooter{
+	width: auto%;
 }
 
 .hamburger {
@@ -370,20 +414,31 @@ header, ul, {
 	font-size: 16px;
   }
 
-  header ul li {
-    width: 100%;
-    padding: 5px;
-    margin: 0;
-  }
+
   nav {
     /*start with nav closed*/
     max-height: 0;
     /*ensures the menu is not visible from the start*/
     overflow: hidden;
+    width: 100%;
+    transition: 2s all;
+
+
   }
+
   nav.open{
-    max-height: 200px;
+    max-height: 500px;
+    width: 100%;
+
   }
+   ul {
+    flex-direction: column;
+    justify-content: flex-end;
+   
+   
+  }
+
+
   section div input {
   	max-width: 300px;
   }
@@ -404,4 +459,29 @@ header, ul, {
 #myimage {
 	width:40%;
 }
+
+#confetti_content, #confetti_content2 {
+	width: auto;
+}
+
+/*Resume Page*/
+
+#resumeimg {
+	margin: auto;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	width: 90%;
+}
+#companiesimage {
+	margin: auto;
+	background-color: pink;
+	margin-bottom: 50px;
+	width: 90%;
+}
+#companies {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 600;
+	font-size:1em;
+}
+
 
