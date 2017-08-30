@@ -40,6 +40,3 @@ $(document).ready(function(){
 
        
 });
-// Home page: 
-//1. In the header on the mobile version, how can I get the Menu and li elements to align to the right?
-//2. Go To Top button in the bottom: Way to get Font Awesome to appear?

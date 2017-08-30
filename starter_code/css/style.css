@@ -33,15 +33,19 @@ body{
 }
 
 .hamburger {
-  padding: 20px;
   display: none;
+
+}
+.hamburger:hover {
+	cursor: pointer;
 }
 
 #logo {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 600;
 	font-size: 24px;
-	margin-left: 20px;
+	color: #4b4b4b;
+	padding-left: 20px;
 }
 nav {
 	font-family: 'Nunito', sans-serif;
@@ -208,12 +212,13 @@ p {
     border-color: gray;
     border-width: 2px;
     border-style: solid;
-
-   
+    text-align: center;
+   	color:black ;
     font-family: 'Nunito', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 16px;
 	margin-bottom: 30px;
+	margin-top: 20px;
 }
 
 
@@ -366,7 +371,13 @@ input[type=submit] {
     border-style: solid;
 }
 
-input[type=textarea], input[type=email] {
+textarea, input[type=email] {
+	background-color: #fafafa;
+	border: 1px solid #ccc;
+	padding: 13px;
+	width: auto;
+}
+textarea {
 	background-color: #fafafa;
 	border: 1px solid #ccc;
 	padding: 13px;
@@ -375,12 +386,22 @@ input[type="radio"]{
   margin: 0 3px 0 3px;
 }
 
+#radio-button-header {
+	text-align: center;
+}
+
 
 
 
 
 @media screen and (max-width: 780px){
 
+/* 
+
+header has flex-direction column
+
+div goes to display: flex;
+remove fixed height from header
 /*MOBILE VERSION*/
 
 /*Home*/
@@ -394,12 +415,21 @@ input[type="radio"]{
 #header_container {
 	
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	top: 0px;
 	z-index: 1;
+	height: unset;
 
 
+
+}
+header #mobile-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
 
 #paralaxbox, #homefooter{
@@ -408,10 +438,12 @@ input[type="radio"]{
 
 .hamburger {
     display: block;
-    color: gray;
+	color: #4b4b4b;
     font-family: 'Nunito', sans-serif;
 	font-weight: 400;
 	font-size: 16px;
+	padding-right: 20px;
+
   }
 
 
@@ -422,21 +454,45 @@ input[type="radio"]{
     overflow: hidden;
     width: 100%;
     transition: 2s all;
-
+    text-align: center;
 
   }
 
   nav.open{
-    max-height: 500px;
+  	max-height: 400px;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-right: 40px;
 
   }
    ul {
-    flex-direction: column;
-    justify-content: flex-end;
-   
+   	display: flex;
+   	flex-direction: column;
+   	font-size: 2em;
+   	line-height: 1;
+	height: 70px;  
    
   }
+
+
+/*ul {
+	display:flex;
+	justify-content:space-around;
+	width: 500px;
+	list-style-type: none;
+
+}*/
+#confetti_content, #confetti_content2 {
+	width: auto;
+}
+
+#myimage {
+	width:40%;
+}
+
+/*Work Page*/
 
 
   section div input {
@@ -456,13 +512,11 @@ input[type="radio"]{
 
 }
 
-#myimage {
-	width:40%;
-}
 
-#confetti_content, #confetti_content2 {
-	width: auto;
-}
+
+
+
+
 
 /*Resume Page*/
 
