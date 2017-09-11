@@ -30,6 +30,13 @@ $(document).ready(function(){
     	});
 	});	
 
+// Image sequential fade in://
+var grid_container = document.querySelectorAll(".grid_container img"), i = .07;
+Array.prototype.forEach.call(grid_container, function(grid_container) { 
+      setTimeout(function(){ grid_container.classList.add("visible") }, 300*i)
+i++;
+})
+
 
 	
 
